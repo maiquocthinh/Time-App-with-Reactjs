@@ -1,0 +1,43 @@
+.Navbar {}
+
+.NavbarList {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #067a6f;
+}
+
+.NavbarItem {
+    position: relative;
+    display: block;
+    width: 100%;
+    color: #ffc;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.NavbarItem:not(:first-child)::before {
+    content: '';
+    display: block;
+    border-left: 2px solid white;
+    border-radius: 2px;
+    height: 80%;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.NavbarItemActive {
+    color: #a70202;
+}
+
+.NavbarLink {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}

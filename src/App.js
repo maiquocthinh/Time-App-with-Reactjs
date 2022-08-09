@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import NavBar from "./Components/NavBar/NavBar";
+import Clock from './Pages/Clock/Clock';
+import CountDown from './Pages/CountDown/CountDown';
+import StopWatch from './Pages/StopWatch/StopWatch';
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="AppWrap">
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<Clock />} />
+          <Route path='/clock' element={<Clock />} />
+          <Route path='/count-down' element={<CountDown />} />
+          <Route path='/stop-watch' element={<StopWatch />} />
+        </Routes>
+      </div>
+
     </div>
   );
 }

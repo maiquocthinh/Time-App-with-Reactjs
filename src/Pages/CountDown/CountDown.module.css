@@ -1,0 +1,185 @@
+.CountDown {
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.Clock {
+    background: #0d1621;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    width: 32vw;
+    min-width: 400px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Clock.TimeOut::before{
+    content: 'Time Out';
+    display: block;
+    background-color: rgb(255 0 0 / 62%);
+    color: cornsilk;
+    font-size: 20px;
+    white-space: nowrap;
+    padding: 4px 80px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.Time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TimeItem {
+    position: relative;
+    padding-left: 14px;
+    padding-right: 6px;
+    font-size: 50px;
+}
+
+.TimeItem:not(:first-child)::before {
+    content: ':';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+
+.Box {
+    margin-top: 12px;
+}
+
+.Control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.Control h2 {
+    margin: 0;
+    padding: 4px 12px;
+    font-size: 32px;
+    color: cornsilk;
+    background-color: darkcyan;
+    text-align: center;
+    min-width: 420px;
+}
+.WrapBtn {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 12px;
+    
+}
+.WrapBtn button {
+    background-color: darkgray;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+.WrapBtn button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+button.BtnToggle {
+    background-color: darkcyan;
+}
+button.BtnToggleActive {
+    background-color: crimson;
+}
+button.BtnReset {
+    background-color: cornflowerblue;
+}
+button.BtnEdit {
+    background-color: darkorange;
+}
+.Input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.Input h2 {
+    margin: 0;
+    padding: 4px 12px;
+    font-size: 32px;
+    color: cornsilk;
+    background-color: darkcyan;
+    text-align: center;
+    min-width: 420px;
+}
+
+.TimeSet {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+.TimeSetItem{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: 0 20px;
+}
+.TimeSetItem input {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 0 8px;
+    vertical-align: middle;
+}
+
+.TimeSetItem span {
+    display: block;
+    margin: 4px 0 0;
+    padding: 0 4px;
+    text-align: left;
+}
+
+.BtnSet{
+    width: 50%;
+    background-color: darkcyan;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin-bottom: 8px;
+}
+.BtnSet:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.Digital {
+    display: inline-block;
+    font-family: Digital-7;
+    position: relative;
+}

@@ -1,0 +1,158 @@
+.StopWatch {
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Clock {
+    background: #0d1621;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    width: 32vw;
+    min-width: 400px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TimeItem {
+    position: relative;
+    padding-left: 14px;
+    padding-right: 6px;
+    font-size: 50px;
+}
+
+.TimeItem:not(:first-child, :last-child)::before {
+    content: ':';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+
+.TimeItem:last-child {
+    padding: 0;
+    font-size: 24px;
+    transform: translateY(-3px);
+    position: relative;
+}
+.TimeItem:last-child span{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Box {
+    margin-top: 12px;
+}
+
+.Control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.Control h2 {
+    margin: 0;
+    padding: 4px 12px;
+    font-size: 32px;
+    color: cornsilk;
+    background-color: darkcyan;
+    text-align: center;
+    min-width: 420px;
+}
+
+.WrapBtn {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 12px;
+
+}
+
+.WrapBtn button {
+    background-color: darkgray;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+.WrapBtn button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+button.BtnToggle {
+    background-color: darkcyan;
+}
+
+button.BtnToggleActive {
+    background-color: crimson;
+}
+
+button.BtnSplit {
+    background-color: darkorange;
+}
+
+button.BtnReset {
+    background-color: cornflowerblue;
+}
+
+.Results {
+    margin-top: 18px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.ResultsList {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    background-color: cornsilk;
+    color: black;
+    font-size: 24px;
+    font-family: Digital-7;
+
+}
+.ResultsItem {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4px;
+    cursor: default;
+}
+
+.ResultsItemHighlight {
+    background-color: darkcyan;
+    color: cornsilk;
+}
+
+.ResultsItem span{
+    margin: 0 8px;
+}
+.Ordinal {}
+.SlipTotal {}
+.SlipTime {}
+
+.Digital {
+    display: inline-block;
+    font-family: Digital-7;
+    position: relative;
+}
