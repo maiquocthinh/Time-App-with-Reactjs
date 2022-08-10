@@ -95,3 +95,8 @@
     font-family: Digital-7;
     position: relative;
 }
+@media (max-width: 600px) {
+    .MyClockWrap{
+        min-width: 96vw;
+    }
+}

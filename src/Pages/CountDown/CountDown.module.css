@@ -183,3 +183,20 @@ button.BtnEdit {
     font-family: Digital-7;
     position: relative;
 }
+
+@media (max-width: 600px) {
+    .Clock{
+        min-width: 96vw;
+    }
+    .Input,.Control{
+        width: 96vw;
+    }
+    .TimeSetItem{
+        margin: 0 10px;
+    }
+}
+@media (max-width: 400px) {
+    .TimeSet{
+        display: block;
+    }
+}

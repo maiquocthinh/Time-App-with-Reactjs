@@ -6,10 +6,16 @@
 }
 
 .AppWrap {
-  margin: 12px;
   background-color: lightblue;
   width: 65vw;
   max-width: 1234px;
   min-width: 500px;
   min-height: 400px;
+}
+
+@media (max-width: 600px) {
+  .AppWrap{
+    min-width: 100vw;
+    height: 100vh;
+  }
 }
